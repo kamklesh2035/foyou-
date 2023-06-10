@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework Page</title>
+	<!-- CSS de bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<style>
+		.item-card {
+			flex-basis: 33%;
+			margin-bottom: 1rem;
+			padding: 1rem;
+			box-sizing: border-box;
+		}
+		@media only screen and (max-width: 768px) {
+			.item-card {
+				flex-basis: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Homework Page</h1>
+		<div class="row">
+			<script>
+				// Class Cuisine
+				class Cuisine {
+					constructor(name, prix, image) {
+						this.name = name;
+						this.prix = prix;
+						this.image = image;
+					}
+				}
+
+				// Liste d'objets
+				let cuisines = [
+					new Cuisine("Cuisine 1", 10, "cuisine1.jpg"),
+					new Cuisine("Cuisine 2", 15, "cuisine2.jpg"),
+					new Cuisine("Cuisine 3", 20, "cuisine3.jpg"),
+					new Cuisine("Cuisine 4", 25, "cuisine4.jpg"),
+					new Cuisine("Cuisine 5", 30, "cuisine5.jpg"),
+					new Cuisine("Cuisine 6", 35, "cuisine6.jpg"),
+					new Cuisine("Cuisine 7", 40, "cuisine7.jpg"),
+					new Cuisine("Cuisine 8", 45, "cuisine8.jpg"),
+					new Cuisine("Cuisine 9", 50, "cuisine9.jpg")
+				];
+
+				// Loop through the array and display the cuisines
+				for (let i = 0; i < cuisines.length; i++) {
+					let cuisine = cuisines[i];
+					document.write('<div class="item-card col-md-4"><div class="card" style="width: 100%;">' +
+						'<img class="card-img-top" src="' + cuisine.image + '" alt="' + cuisine.name + '">' +
+						'<div class="card-body">' +
+							'<h5 class="card-title">' + cuisine.name + '</h5>' +
+							'<p class="card-text">Prix: ' + cuisine.prix + ' €</p>' +
+						'</div>' +
+					'</div></div>');
+				}
+			</script>
+		</div>
+	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

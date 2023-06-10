@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil {% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Site E-Commerce</h1>
+    <p>Bienvenue dans notre Boutique🤝</P>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="{{asset('assets/Images/deezer.jpg')}}" class="card-img-top" alt="Not found">
+      <div class="card-body">
+        <h5 class="card-title">Deezer</h5>
+        <p class="card-text">Application de music</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{{asset('assets/Images/netfli_1.png')}}" class="card-img-top" alt="Not found">
+      <div class="card-body">
+        <h5 class="card-title">Netflix</h5>
+        <p class="card-text">Application de Streaming</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{{asset('assets/Images/spotify.png')}}" class="card-img-top" alt="not found">
+      <div class="card-body">
+        <h5 class="card-title">Spotify</h5>
+        <p class="card-text">Application de music</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{{asset('assets/Images/bg2.jpg')}}" class="card-img-top" alt="not found">
+      <div class="card-body">
+        <h5 class="card-title">Background</h5>
+        <p class="card-text">Image arrière de l'affiche</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}
+ 

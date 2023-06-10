@@ -1,0 +1,5 @@
+tasks:
+  - name: Install Symfony CLI
+    command: |
+      wget https://get.symfony.com/cli/installer -O - | bash
+      export PATH="$HOME/.symfony5/bin:$PATH"

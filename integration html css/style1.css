@@ -1,0 +1,44 @@
+    .font-weight-normal{
+        text-transform: uppercase; 
+        Font-family: Roboto
+    }
+    div.b-example-divider{
+        width: 1308px;
+        height: 70px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+    }
+    #project_div{
+        opacity: 50%;
+    }
+    .row row-cols-1 row-cols-md-3 g-4 g-lg-3{
+        height: 1160px;
+        width: 1308px;
+        left: 0px;
+        top: 530.1900024414062px;
+        border-radius: 0px;
+    }
+    
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}

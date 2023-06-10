@@ -1,0 +1,100 @@
+:root {
+    /*Couleurs*/
+    --couleur-principale: #2C2A59;
+    --couleur-secondaire: #6f6bf2;
+    --couleur-tertiaire: #5a56bf;
+    --couleur-texte: #ffffff;
+
+    /*Polices*/
+    --police-titre: 'roboto',sans-serif;
+    --police-sous-titre: 'roboto',sans-serif;
+    --police-texte: 'Open Sans',sans-serif;
+
+    /*Dimensions*/
+    --marge-page: 2rem;
+    --marge-section: 3rem;
+    --marge-element: 1rem;
+    --hauteur-ligne: 1.5;
+
+    /*Contoure*/
+    --contour: 10px;
+
+    /*Bordures*/
+    --bordure-interne: 20px;
+}
+
+body {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-texte);
+    font-family:var(--police-titre);
+    margin: var(--marge-page);
+    font-size : 16px;
+}
+
+header {
+    background-color: var(--couleur-secondaire);
+    border-radius: var(--contour);
+    padding: var(--bordure-interne);
+}
+
+section.expérience,section.éducation {
+    background-color: var(--couleur-tertiaire);
+    margin: var(--marge-section);
+    border-radius: var(--contour);
+    padding: var(--bordure-interne);
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px;
+    /*display: inline-table;*/
+}
+div.block{
+    display: flex;
+}
+div.profil {
+    display:flex;
+    align-items: center;
+    vertical-align: top;
+}
+/*
+section.expérience {
+    position: 0px 0px;
+    order: 0;
+    flex-grow: 1;
+    left: 0px;
+}
+section.éducation {
+    position: 585px 0px;
+    order: 1;
+    flex-grow: 1;
+    left: 585px;
+}
+*/
+
+h1,h2 {
+    font-family: var(--police-titre);
+}
+
+h3,h4 {
+    font-family: var(--police-sous-titre);
+}
+
+p {
+    font-family: var(--police-texte);
+}
+
+li {
+    margin: var(--marge-element);
+    line-height: var(--hauteur-ligne);
+    /*list-style: none;*/
+
+}
+
+img{
+    height: 200px;
+    width: 180px;
+    left: 30px;
+    top: 30px;
+    border-radius: 10px;
+
+}
